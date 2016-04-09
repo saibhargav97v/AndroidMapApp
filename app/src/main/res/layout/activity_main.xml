@@ -13,6 +13,6 @@
         android:id="@+id/listView"
         android:layout_alignParentLeft ="true"
         android:layout_alignParentTop ="true"
-        android:layout_marginLeft="66dp"
-        android:layout_marginTop="53dp" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp" />
 </LinearLayout>

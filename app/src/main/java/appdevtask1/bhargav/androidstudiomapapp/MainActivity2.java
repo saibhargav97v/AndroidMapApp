@@ -37,7 +37,7 @@ public class MainActivity2 extends AppCompatActivity implements AsyncResponse {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
         asynctask.delegate = this;
         //Toast.makeText(getApplicationContext(),"Value is" + value1 ,Toast.LENGTH_LONG).show();
         category=getIntent().getStringExtra("categ");
@@ -74,6 +74,7 @@ public class MainActivity2 extends AppCompatActivity implements AsyncResponse {
 
 
                     Intent i = new Intent(MainActivity2.this, MapsActivity.class);
+                    i.putExtra("value", hostel_name.get(position));
                     i.putExtra("Map1", lat.get(position));
                     i.putExtra("Map2", lng.get(position));
                     startActivity(i);
